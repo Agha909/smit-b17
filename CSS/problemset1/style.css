@@ -4,11 +4,26 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-div{
-    height: 200px;
-    width: 200px;
-    background-image: url(https://images.unsplash.com/photo-1753109910060-ba1fa8fbd094?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8);
-    background-size: cover;
-    position: fixed;
-    right: 0px;
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua ;
+}
+.outer{
+
+}
+@media (max-width: 500px){
+    .navbar{
+        background-color: red;
+    }
 }

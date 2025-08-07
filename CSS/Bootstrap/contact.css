@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main section pic */
+.main-pic img{
+    width: 40vw;
+    height: 80vh;
+
+}
+.anchor{
+    color: #000000;
+    text-decoration: none;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation: infinite;
+}
+.anchor:hover{
+    text-decoration: underline blue;
+    transform: 3.2s smooth ;
+}
+@media (max-width:768px){
+    html{
+        font-size: 1.5rem;
+    }
+    .main-anchor{
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .join{
+        padding-top: 1rem;
+    }
+    .main-pic{
+        display: none;
+    }
+
+}

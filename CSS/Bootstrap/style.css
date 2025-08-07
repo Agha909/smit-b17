@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  font-size: clamp(16px, 1.2vw, 30px);
+}
+/* for review box */
+.custom-box{
+  width: 250px ;
+  height: 250px ;
+}
+/* hover and animation for NAVBAR li and anchor */
+.anchor{
+  position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: #000000;
+      padding-bottom: 4px;
+      transition: transform 0.3s ease;
+}
+.anchor:hover{
+  transition: transform 0.3s ease;
+  text-decoration: underline;
+  transform: scale(1.3);
+}
+  /* hover and animation for footer icon */
+.icon {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding-bottom: 4px;
+      transition: transform 0.3s ease;
+    }
+.icon:hover{
+  transform: scale(1.25);
+}

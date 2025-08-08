@@ -181,7 +181,7 @@ document.writeln("<h1>The Lifetime Supply Calculator</h1>");
 document.writeln("You will need " + totalAmount + snack + "to last you until the ripe old age of " + maximumAge +"</br>");
 
 
-//CHAPTER 6
+//CHAPTER 6-9
 
 //Q1
 var z = 5;
@@ -205,4 +205,57 @@ z--;
 document.writeln("The value of z-- is: " + z + "</br>");
 document.writeln("Now the value of z is: " + z + "</br>" + "</br>");
 
+//Q2
+var a = 2 , b = 1;
+var result = --a - --b + ++b + b--;
+document.writeln("a is " + a + "</br>");
+document.writeln("b is " + b + "</br>");
+document.writeln("Result is " + result + "</br>");
+/*
+ouput:
+--a = 1 because pre decrement a 
+--a - --b = 1 because both a and b are pre decrementing
+--a - --b + ++b = 2 because both a and b are pre decrementing and then b is pre incrementing
+--a - --b + ++b + b-- = 3 because both a and b are pre decrementing and then b is pre incrementing, then b is post decrementing (so no effect on same line)
+*/
 
+//Q3
+var name = prompt("What is your name?");
+alert("Welcome " + name);
+
+//Q5
+var num = prompt("Enter a number", "5");
+num =Number(num);
+document.writeln("Table of " + num + "</br>");
+document.writeln(num + "x 1 = " + (num*1) + "</br>");
+document.writeln(num + "x 2 = " + (num*2) + "</br>");
+document.writeln(num + "x 3 = " + (num*3) + "</br>");
+document.writeln(num + "x 4 = " + (num*4) + "</br>");
+document.writeln(num + "x 5 = " + (num*5) + "</br>");
+document.writeln(num + "x 6 = " + (num*6) + "</br>");
+document.writeln(num + "x 7 = " + (num*7) + "</br>");
+document.writeln(num + "x 8 = " + (num*8) + "</br>");
+document.writeln(num + "x 9 = " + (num*9) + "</br>");
+document.writeln(num + "x 10 = " + (num*10) + "</br>");
+
+//Q6
+var sub1 = prompt("Enter subject name");
+var sub2 = prompt("Enter subject name");
+var sub3 = prompt("Enter subject name");
+var totalMarks = 300;
+var sub1Marks = prompt("Enter " + sub1 +" marks");
+var sub2Marks = prompt("Enter " + sub2 +" marks");
+var sub3Marks = prompt("Enter " + sub3 +" marks");
+sub1Marks = Number(sub1Marks);
+sub2Marks = Number(sub2Marks);
+sub3Marks = Number(sub3Marks);
+var marksObtained = sub1Marks + sub2Marks + sub3Marks;
+var percentageSub1 = sub1Marks/100 * 100;
+var percentageSub2 = sub2Marks/100 * 100;
+var percentageSub3 = sub3Marks/100 * 100;
+var percentage = marksObtained/totalMarks * 100;
+
+document.writeln(sub1 + " ,Total marks = 100, Marks obtained = " + sub1Marks + " ,Percentage = " + percentageSub1 + "%" + "</br>");
+document.writeln(sub2 + " ,Total marks = 100, Marks obtained = " + sub2Marks + " ,Percentage = " + percentageSub2 + "%" +  "</br>");
+document.writeln(sub3 + " ,Total marks = 100, Marks obtained = " + sub3Marks + " ,Percentage = " + percentageSub3 + "%" + "</br>");
+document.writeln("Total marks = "+ totalMarks + ", Total Marks obtained = " + marksObtained + " Total Percentage = " + percentage + "%" + a"</br>");

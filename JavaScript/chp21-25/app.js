@@ -76,4 +76,65 @@
 // console.log(a);
 
 //Q13
+// Ask user for username
+// var username = prompt("Enter your username:");
+
+// if (username.indexOf("@") !== -1 || 
+//     username.indexOf(".") !== -1 || 
+//     username.indexOf(",") !== -1 || 
+//     username.indexOf("!") !== -1) {
+    
+//     console.log("Please enter a valid username without @ . , !");
+// } else {
+//     console.log("Username added: " + username);
+// }
+
+//Q14
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// var userInput = prompt("Welcome! What do you want to order?");
+
+// var searchItem = userInput.toLowerCase();
+
+// if (A.indexOf(searchItem) !== -1) {
+//     console.log(userInput + " is available at index " + A.indexOf(searchItem));
+// } else {
+//     console.log(userInput + " is not available in our bakery.");
+// }
+
+//Q15
+
+//Q16
+// var university = "University of Karachi";
+
+// var arr = university.split("");
+
+// console.log(arr);
+
+// //Q17
+// var a = prompt("Enter some text:");
+
+// var b = a.charAt(userInput.length - 1);
+
+// console.log("User input: " + a);
+// console.log("Last character: " + b);
+
+
+//Q18
+// var text = "The quick brown fox jumps over the lazy dog";
+
+// var lowerText = text.toLowerCase();
+
+// var words = lowerText.split(" ");
+
+// var count = 0;
+// for (var i = 0; i < words.length; i++) {
+//     if (words[i] === "the") {
+//         count++;
+//     }
+// }
+
+// console.log("Text: " + text);
+// console.log("Number of occurrences of 'the': " + count);
+
 

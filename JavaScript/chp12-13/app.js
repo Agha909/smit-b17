@@ -21,8 +21,8 @@ if (char !== null && char.length === 1) {
 }
 
 //Q2
-var num1 = parseInt(prompt("Enter the first integer:"));
-var num2 = parseInt(prompt("Enter the second integer:"));
+var num1 = +prompt("Enter the first integer:");
+var num2 = +prompt("Enter the second integer:");
 
 if (!isNaN(num1) && !isNaN(num2)) {
     if (num1 > num2) {
@@ -33,11 +33,11 @@ if (!isNaN(num1) && !isNaN(num2)) {
         alert("Both numbers are equal: " + num1);
     }
 } else {
-    alert("Invalid input. Please enter integers only.");
+    alert("Please enter integers only.");
 }
 
 //Q3
-var number = parseFloat(prompt("Enter a number:"));
+var number = +prompt("Enter a number:");
 
 if (!isNaN(number)) {
     if (number > 0) {
@@ -48,7 +48,7 @@ if (!isNaN(number)) {
         alert("The number is zero.");
     }
 } else {
-    alert("Invalid input. Please enter a valid number.");
+    alert("Please enter a valid number.");
 }
 
 //Q4
@@ -74,7 +74,7 @@ if (userPassword === null || userPassword === "") {
     alert("Please enter your password");
 } else {
     if (userPassword === correctPassword) {
-        alert("Correct! The password you entered matches the original password");
+        alert("Correct!");
     } else {
         alert("Incorrect password");
     }
@@ -93,7 +93,7 @@ if (hour < 18) {
 alert(greeting);
 
 //Q7
-var time = parseInt(prompt("Enter time in 24-hour format (e.g. 1900 for 7 PM):"));
+var time = +prompt("Enter time in 24-hour format (e.g. 1900 for 7 PM):");
 
 if (!isNaN(time) && time >= 0 && time <= 2359) {
     if (time >= 0 && time < 1200) {
@@ -106,7 +106,7 @@ if (!isNaN(time) && time >= 0 && time <= 2359) {
         alert("Good Night!");
     }
 } else {
-    alert("Invalid input. Please enter a valid time between 0000 and 2359.");
+    alert("Please enter a valid time between 0000 and 2359.");
 }
 
 

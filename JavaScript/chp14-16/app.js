@@ -21,7 +21,7 @@ var booleanArray = [true, false, true, false];
 var mixedArray = ["Geto", 25, true, null, "Student"];
 
 //Q7
-var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.PHIL", "PHD"];
 
 document.write("<h2>Qualifications in Pakistan:</h2>");
 document.write("1) " + qualifications[0] + "<br>");
@@ -97,7 +97,7 @@ var scores = [320, 230, 480, 120];
 document.write("<h3>Original Scores:</h3>" + scores.join(", ") + "<br><br>");
 scores.sort();
 
-document.write("<h3>Sorted Scores (Ascending - Default Sort):</h3>" + scores.join(", "));
+document.write("<h3>Sorted Scores (Ascending):</h3>" + scores.join(", "));
 
 //Q11
 var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];

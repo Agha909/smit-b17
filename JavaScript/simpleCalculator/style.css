@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://wallpapers.com/images/hd/cool-math-s6uthdh253ozc2tt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.calculator {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(1, 30, 109, 0.89);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 25px;
+    
+}
+
+input{
+    width: 100%;
+    height: 60px;
+     background: transparent; 
+     border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: rgb(250, 247, 247);
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: right;
+}
+
+input::placeholder {
+    font-size: 25px;
+    color: rgb(243, 238, 238);
+    text-align: right;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.eqlBtn {
+background-color: rgb(199, 170, 4);
+}
+
+.operator {
+    color: rgb(251, 255, 0);
+}

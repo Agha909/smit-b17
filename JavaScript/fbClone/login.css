@@ -1,0 +1,264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #f2f4f7;
+    flex-wrap: wrap;
+}
+.container> .text{
+    width: 530px;
+    height: 180px;
+}
+.container > .text > img{
+    height: 110px;
+    width: auto;
+    position: relative;
+    top: -50px;
+}
+.container > .text > p{
+    font-size: 28px;
+    margin-left: 30px;
+     position: relative;
+    top: -65px;
+    color: #1c1e21;
+}
+.form{
+    width: 400px;
+    height: 370px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form > form > .bar1{
+    width:350px;
+    height:50px ;
+    margin: 15px 20px 0px 20px;
+    border-radius: 6px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 2px solid lightgray;
+    color: rgb(24, 23, 23);
+}
+.form > form > .bar1:hover {
+    border-color: #0866ff;
+}
+.form > form > button{
+     width:370px;
+    height:50px ;
+    margin: 15px 20px 0px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #0866ff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form > form > button >a{
+    text-decoration: none;
+    color: white;
+}
+.form > form > button:hover {
+    opacity: 0.8;
+}
+.form > form > p {
+    font-size: 14px;
+    align-self: center;
+    margin: 20px 135px;
+    color: #0866ff;
+}
+.form > form > p:hover{
+    text-decoration: underline;
+}
+.form > form > hr {
+    border: 1px solid lightgray;
+    width: 360px;
+    margin: 0px 25px;
+}
+.form > form > .button2{
+    width:200px;
+    height:50px ;
+    margin: 30px 100px;
+    border-radius: 6px;
+    border: none;
+    background-color: #36a420;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button2 > a{
+    text-decoration: none;
+    color: white;
+}
+.form > form > .button2:hover {
+    background-color: #187904;
+}
+.container > .line {
+    position: absolute;
+    right: 200px;
+    top: 530px;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+.container > .line > span{
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1025px) {
+   .container{
+    gap: 30px;
+   }
+   .container > .line{
+    right: 80px;
+   }
+}
+
+@media only screen and (max-width:769px) {
+   .container{
+    flex-direction: column;
+    gap: 0px;
+    height: 750px;
+   }
+   .container > .text{
+    text-align: center;
+   }
+   .container > .line{
+    right: 220px;
+    top: 700px;
+   }
+}
+
+@media only screen and (max-width:426px) {
+   .container{
+    flex-direction: column;
+    gap: 0px;
+    height: 750px;
+    width: 100%;
+   }
+   .container > .text{
+    text-align: center;
+      width: 400px;
+    height: 130px;
+   }
+   .container > .text>p{
+    margin-right: 15px;
+    font-size: 20px;
+   }
+    .container>.text > img {
+    height: 90px;
+   }
+   .container > .line{
+    right: 45px;
+    top: 655px;
+   }
+}
+
+@media only screen and (max-width:376px) {
+   .container{
+    flex-direction: column;
+    gap: 0px;
+    height: 650px;
+    width: 100%;
+   }
+   .container > .text{
+    text-align: center;
+    width: 340px;
+    height: 100px;
+   }
+   .container > .text>p{
+    margin-right: 15px;
+    font-size: 15px;
+   }
+    .container>.text > img {
+    height: 70px;
+   }
+   .container > .line{
+    right: 25px;
+    top: 580px;
+   }
+   .container > .form{
+    width: 340px;
+    text-align: center;
+   }
+   .form > form > .bar1{
+    width: 300px;
+    margin: 15px 0px 0px;
+   }
+   .form > form > button{
+    width: 315px;
+    margin: 15px 0px 0px;
+   }
+   .form > form > hr {
+    width: 300px;
+    margin: 0px auto;
+   }
+   .form > form > p {
+    margin: 20px 60px;
+   }
+   .form > form > .button2{
+    margin: 30px auto;
+   }
+
+}
+@media only screen and (max-width:321px) {
+   .container{
+    flex-direction: column;
+    gap: 0px;
+    height: 550px;
+    width: 100%;
+   }
+   .container > .text{
+    text-align: center;
+    width: 280px;
+    height: 65px;
+   }
+   .container > .text>p{
+    margin-right: 15px;
+    font-size: 15px;
+   }
+    .container>.text > img {
+    height: 70px;
+   }
+   .container > .line{
+    left: 30px;
+    top: 500px;
+    font-size: 12px;
+   }
+   .container > .form{
+    width: 100%;
+    text-align: center;
+   }
+   .form > form > .bar1{
+    width: 280px;
+    margin: 15px 0px 0px;
+   }
+   .form > form > button{
+    width: 300px;
+    margin: 15px 0px 0px;
+   }
+   .form > form > hr {
+    width: 280px;
+    margin: 0px auto;
+   }
+   .form > form > p {
+    margin: 20px 60px;
+   }
+   .form > form > .button2{
+    margin: 30px auto;
+   }
+
+}

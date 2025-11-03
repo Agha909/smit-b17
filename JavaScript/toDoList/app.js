@@ -1,34 +1,41 @@
-function addItems() {
-    let todoText = document.getElementById("todoText");
-    if (todoText.value.trim() === "") {
-        Swal.fire("Please Enter a Value!");
+ const taskInput = document.querySelector("#taskInput");
+    const taskList = document.querySelector("#taskList");
+    const addBtn = document.querySelector("#addBtn");
+    const clearAllBtn = document.querySelector("#clearAllBtn");
+
+    const addTask = () => {
+      const value = taskInput.value.trim();
+
+      if (!value) {
+        Swal.fire("Please enter a task!");
         return;
-    } else {
-        let todoList = document.getElementById("todoList");
+      }
 
-        let todoItem = `
-            <li class="todoItems">
-                ${todoText.value} 
-                <span class="delete-icon" onclick="deleteSingleItem(event)">❌</span>
-            </li>
-        `;
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <span>${value}</span>
+        <span class="remove-icon">❌</span>
+      `;
 
-        todoList.innerHTML += todoItem;
-        todoText.value = "";
-    }
-}
+      li.querySelector(".remove-icon").addEventListener("click", () => {
+        li.remove();
+      });
 
-function deleteSingleItem(event) {
-    event.target.parentElement.remove();
-}
+      taskList.appendChild(li);
+      taskInput.value = "";
+    };
 
-function deleteAllItems() {
-    let todoList = document.getElementById("todoList");
-
-    if (todoList.children.length === 0) {
-        Swal.fire("No Items to Delete!");
+    const clearTasks = () => {
+      if (!taskList.children.length) {
+        Swal.fire("No tasks to delete!");
         return;
-    }
+      }
+      taskList.innerHTML = "";
+    };
 
-    todoList.innerHTML = "";
-}
+    addBtn.addEventListener("click", addTask);
+    clearAllBtn.addEventListener("click", clearTasks);
+
+    taskInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") addTask();
+    });

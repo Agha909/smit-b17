@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f4f7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background: white;
+  padding: 20px;
+  width: 360px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.buttons button,
+.find button {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons button:hover,
+.find button:hover {
+  background: #1e7e34;
+}
+
+.find input {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 6px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+  background: #e9ecef;
+  padding: 7px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}

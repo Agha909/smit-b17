@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Book Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main">
+    <h2>📚 Library Book Manager</h2>
+
+    <div class="buttons">
+      <button onclick="showAllBooks()">Show All Books</button>
+      <button onclick="showAvailableBooks()">Show Available Books</button>
+      <button onclick="increasePrice()">Increase Price</button>
+    </div>
+
+    <div class="find">
+      <input type="text" id="searchTitle" placeholder="Enter book title">
+      <button onclick="findBook()">Find Book</button>
+    </div>
+
+    <ul id="output"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

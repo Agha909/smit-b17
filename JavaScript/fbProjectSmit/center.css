@@ -1,0 +1,64 @@
+.centerContent{
+    width : 50%;
+    display: flex;
+    padding: 8px 40px;
+    top: 8vh;
+    left: 400px;
+    right: 300px;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mainContent{
+    border: 10px solid black;
+}
+.post{
+    background-color: #FFFFFF;
+    padding: 4px 10px;
+    width: 500px;
+    height: 60px;
+    border-radius: 20px;
+    position:relative;
+    top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.post #inputPost{
+   border-radius: 20px;
+   width: 200px;
+   padding: 8px 40px;
+   background-color: #E4E6E9;
+}
+.post #inputPost button{
+    outline: none;
+    border: none;
+}
+.post i{
+    font-size: 2rem;
+    color : #696C70;
+}
+.postIcon{
+    gap: 8px;
+}
+.postIcon i{
+    font-size: 1.4rem;
+}
+.postIcon #videoUpload{
+    color: red;
+}
+.postIcon #picUpload{
+    color: green;
+}
+.postIcon #emojiUpload{
+    color: yellow;
+}
+/* story card */
+.storyCard{
+    width: 120px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+}

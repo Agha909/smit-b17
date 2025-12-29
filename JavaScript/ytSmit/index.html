@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (Extracted & Simplified) -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="menu-icon">
+      <h2 class="logo">YouTube</h2>
+    </div>
+
+    <div class="nav-middle">
+      <input type="text" id="searchInput" placeholder="Search videos">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="nav-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="user-icon">
+    </div>
+  </nav>
+
+  <!-- CATEGORY BAR -->
+  <div class="category-bar">
+    <button data-cat="all">All</button>
+    <button data-cat="music">Music</button>
+    <button data-cat="gaming">Gaming</button>
+    <button data-cat="news">News</button>
+    <button data-cat="education">Education</button>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="video-container" id="videoContainer"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>

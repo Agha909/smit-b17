@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="./assets/images/menu.png" class="menu-icon">
+      <img src="./assets/images/logo.png" class="logo">
+    </div>
+
+    <div class="nav-middle">
+      <input type="text" id="searchInp" placeholder="Search videos">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="nav-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="user-icon">
+    </div>
+  </nav>
+
+  <div class="category-bar">
+    <button data-cat="all">All</button>
+    <button data-cat="music">Music</button>
+    <button data-cat="gaming">Gaming</button>
+    <button data-cat="news">News</button>
+    <button data-cat="education">Education</button>
+  </div>
+
+  <main class="video-cont" id="videoCont"></main>
+
+  <script src="app.js"></script>
+</body>
+</html>
